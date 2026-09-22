@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Carter | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Alex<span>.dev</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+<!-- Hero -->
+  <header id="home" class="hero">
+    <div class="container hero-inner">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1>Alex Carter</h1>
+      <h2 class="typewriter">I'm a <span id="typeText"></span><span class="cursor">|</span></h2>
+      <p class="hero-desc">
+        Passionate developer crafting beautiful, functional digital experiences.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+<!-- About -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="about-img">
+        <img src="https://via.placeholder.com/400" alt="Alex Carter" />
+      </div>
+      <div class="about-text">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <p>
+          I'm a full-stack developer with 5+ years of experience building web
+          applications. I love turning complex problems into simple, elegant
+          solutions. When I'm not coding, you'll find me hiking or contributing
+          to open-source projects.
+        </p>
+        <div class="about-info">
+          <p><strong>Name:</strong> Alex Carter</p>
+          <p><strong>Email:</strong> alex@example.com</p>
+          <p><strong>Location:</strong> San Francisco, CA</p>
+          <p><strong>Availability:</strong> <span class="badge">Open to work</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Skills -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title center">My <span>Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill" data-level="90"><p>HTML & CSS</p><div class="bar"><span></span></div></div>
+        <div class="skill" data-level="85"><p>JavaScript</p><div class="bar"><span></span></div></div>
+        <div class="skill" data-level="80"><p>React</p><div class="bar"><span></span></div></div>
+        <div class="skill" data-level="75"><p>Node.js</p><div class="bar"><span></span></div></div>
+        <div class="skill" data-level="70"><p>Python</p><div class="bar"><span></span></div></div>
+        <div class="skill" data-level="65"><p>SQL</p><div class="bar"><span></span></div></div>
+      </div>
+    </div>
+  </section>
+
+<!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title center">Featured <span>Projects</span></h2>
+      <div class="projects-grid">
+        <article class="card">
+          <div class="card-img">💻</div>
+          <h3>E-Commerce Platform</h3>
+          <p>Full-stack store with cart, payments, and admin dashboard.</p>
+          <div class="tags"><span>React</span><span>Node.js</span></div>
+        </article>
+        <article class="card">
+          <div class="card-img">📊</div>
+          <h3>Analytics Dashboard</h3>
+          <p>Real-time data visualization dashboard with custom charts.</p>
+          <div class="tags"><span>Vue</span><span>D3.js</span></div>
+        </article>
+        <article class="card">
+          <div class="card-img">📱</div>
+          <h3>Task Manager App</h3>
+          <p>Collaborative productivity app with offline sync support.</p>
+          <div class="tags"><span>React Native</span><span>Firebase</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="section-title">Get in <span>Touch</span></h2>
+        <p>Have a project in mind? Let's build something amazing together.</p>
+        <div class="socials">
+          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Twitter">Twitter</a>
+        </div>
+      </div>
+      <form id="contactForm" class="contact-form" novalidate>
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p id="formStatus" class="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+<footer class="footer">
+    <p>© <span id="year"></span> Alex Carter. All rights reserved.</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
