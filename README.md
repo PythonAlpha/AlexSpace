@@ -1,8 +1,6 @@
 # 🚀 Alex.dev — Personal Portfolio Website
 
 
-jaja877i8
-
 
 
 A modern, fully responsive personal portfolio website built with pure
