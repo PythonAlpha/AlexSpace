@@ -1,5 +1,10 @@
 # 🚀 Alex.dev — Personal Portfolio Website
 
+
+jaja
+
+
+
 A modern, fully responsive personal portfolio website built with pure
 **HTML5, CSS3, and JavaScript** — no frameworks, no build tools, no dependencies.
 
